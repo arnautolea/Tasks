@@ -18,7 +18,7 @@ public class Exercise15 {
 		
 		System.out.print("Enter second integer: "); // prompt
 		number2 = input.nextInt(); // read second number from user
-		
+		input.close();//close Scanner
 		sum = number1 + number2; // add numbers, then store total in sum
 		System.out.printf("Sum is %d%n", sum); // display sum
 		
