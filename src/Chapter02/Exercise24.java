@@ -43,4 +43,3 @@ public class Exercise24 {
 	    	  System.out.println("Largest number is " + num5);
 	}
 }	
-//надо узнать как считывать массив и сравнивать числа в нем...
