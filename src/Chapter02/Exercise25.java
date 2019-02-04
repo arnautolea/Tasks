@@ -15,6 +15,7 @@ public class Exercise25 {
 		System.out.print("Enter number: ");
 		num = input.nextInt();
 		input.close();
+		
 		if ((num%2) == 0)
 			 System.out.println("Number is even");
 	    else 

@@ -21,16 +21,30 @@ public class Exercise30 {
 		
 		int num, num1, num2, num3, num4, num5;
 		
-		System.out.print("Enter number with five digits: ");
-		num = input.nextInt(5);		
+		System.out.print("Enter number with five digits, do not start with zero: "); //promt
+		num = input.nextInt();		
 		input.close();
-				
-		num1 = num / 10000;
-		num2 = (num % 10000) / 1000;
-		num3 = ((num % 10000) % 1000) / 100;
-        num4 = (((num % 10000) % 1000) % 100) / 10;
-        num5 = (((num % 10000) % 1000) % 100) % 10;
 		
-		System.out.printf("%d%s%d%s%d%s%d%s%d%n", num1, "   ", num2, "   ", num3, "   ", num4, "   ", num5);
-	}	
-}
+			if ((num >= 10000) && (num <= 99999)) {
+
+			num1 = num / 10000;
+			num2 = (num % 10000) / 1000;
+			num3 = ((num % 10000) % 1000) / 100;
+	        num4 = (((num % 10000) % 1000) % 100) / 10;
+	        num5 = (((num % 10000) % 1000) % 100) % 10;
+          System.out.printf("%d%s%d%s%d%s%d%s%d%n", num1, "   ", num2, "   ", num3, "   ", num4, "   ", num5);		
+			} // close if
+		
+		if (num > 99999) // more than five digits
+			System.out.println("The number is more than five digits.");
+				
+		if (num <= 9999) // less than five digits
+			System.out.println("The number is less than five digits");
+		
+	} //close main
+} //close class
+
+//проверка на интервал числа..
+//если начать число с "0" то считает что число меньше 5 цифр, 
+//или 012345 считается верным и не учитывается первая цифра..
+//вариант воодить цифру как массив и делать проверку на size(5), (или length?), но пока не знаю как это делать
