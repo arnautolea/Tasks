@@ -18,18 +18,17 @@ public class Exercise15 {
 		
 		System.out.print("Enter second integer: "); // prompt
 		number2 = input.nextInt(); // read second number from user
-		input.close();//close Scanner
+		input.close(); //close Scanner
 		sum = number1 + number2; // add numbers, then store total in sum
 		System.out.printf("Sum is %d%n", sum); // display sum
 		
-		prod = number1 * number2; // add numbers, then store total in prod
+		prod = number1 * number2; // multiplies numbers, then store in prod
 		System.out.printf("Product is %d%n", prod); // display product
 		
-		dif = number1 - number2; // add numbers, then store total in dif
+		dif = number1 - number2; // difference, then store in dif
 		System.out.printf("Difference is %d%n", dif); // display difference
 		
-		quotient = number1 / number2; // add numbers, then store total in quotient
+		quotient = number1 / number2; // division numbers, then store quotient
 		System.out.printf("Quotient is %d%n", quotient); // display quotient
-	}
-	
-}
+	} //close main
+} //close class
