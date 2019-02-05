@@ -68,6 +68,6 @@ public class Exercise32 {
 		
 		System.out.printf("Total positive numbers: %d\n", pos);
 		System.out.printf("Total negative numbers: %d\n", neg);
-		System.out.printf("Total zero numbers: %d\n", zero);
+		System.out.printf("Total zero numbers: %d", zero);
 	} //close main
 } // close class
