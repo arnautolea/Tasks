@@ -11,10 +11,12 @@ public class Exercise31 {
 		System.out.println("number\t square\t cubes");
 //num = 0;
 //System.out.printf("%d \t %d \t %d\n", (num), (num * num), (num * num * num));
-//num = 1; ...			
+//num = 1; 
+//System.out.printf("%d \t %d \t %d\n", (num), (num * num), (num * num * num));
+//num = 2; ...			
 		for (int num = 0; num <= 10; num++) {
 		System.out.printf("%d \t %d \t %d\n", (num), (num * num), (num * num * num));
-// System.out.printf("\n   " + num + "        " + num*num + "        " + num*num*num);
+// System.out.printf("\n   " + num + "        " + num*num + "        " + num*num*num); //alternative
 		} //close for
 	} //close main
 } //close class
