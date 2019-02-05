@@ -6,9 +6,9 @@ if the user types in the number 42339, the program should print 4 2 3 3 9
 Assume that the user enters the correct number of digits.
 What happens when you enter a number with more than five digits? 
 What happens when you enter a number with fewer than five digits? 
-[Hint: It’s possible to do this exercise with the techniques you 
-learned in this chapter. You’ll need to use both division and 
-remainder operations to “pick off” each digit.]*/
+[Hint: Itâ€™s possible to do this exercise with the techniques you 
+learned in this chapter. Youâ€™ll need to use both division and 
+remainder operations to â€œpick offâ€ each digit.]*/
 package Chapter02;
 
 import java.util.Scanner;
@@ -21,9 +21,9 @@ public class Exercise30 {
 		
 		int num, num1, num2, num3, num4, num5;
 		
-		System.out.print("Enter number with five digits, do not start with zero: "); //promt
+		System.out.print("Enter number with five digits, do not start with zero: "); //prompt
 		num = input.nextInt();		
-		input.close();
+		input.close(); //close Scanner
 		
 			if ((num >= 10000) && (num <= 99999)) {
 
@@ -43,8 +43,3 @@ public class Exercise30 {
 		
 	} //close main
 } //close class
-
-//ïğîâåğêà íà èíòåğâàë ÷èñëà..
-//åñëè íà÷àòü ÷èñëî ñ "0" òî ñ÷èòàåò ÷òî ÷èñëî ìåíüøå 5 öèôğ, 
-//èëè 012345 ñ÷èòàåòñÿ âåğíûì è íå ó÷èòûâàåòñÿ ïåğâàÿ öèôğà..
-//âàğèàíò âîîäèòü öèôğó êàê ìàññèâ è äåëàòü ïğîâåğêó íà size(5), (èëè length?), íî ïîêà íå çíàş êàê ıòî äåëàòü
